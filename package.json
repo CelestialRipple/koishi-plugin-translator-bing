@@ -1,0 +1,43 @@
+{
+  "name": "koishi-plugin-translator-bing",
+  "description": "提供bing翻译服务",
+  "version": "1.0.0",
+  "main": "lib/index.js",
+  "typings": "lib/index.d.ts",
+  "files": [
+    "lib",
+    "dist"
+  ],
+  "license": "MIT",
+  "scripts": {
+    "build": "atsc -b"
+  },
+  "keywords": [
+    "chatbot",
+    "koishi",
+    "plugin",
+    "translation",
+    "翻译",
+    "bing"
+  ],
+  "koishi": {
+    "description": {
+      "en": "translation bing",
+      "zh": "必应翻译服务"
+    },
+    "service": {
+      "implements": [
+        "translator"
+      ]
+    }
+  },
+  "peerDependencies": {
+    "koishi": "^4.11.0"
+  },
+  "devDependencies": {
+    "koishi": "^4.11.0"
+  },
+  "dependencies": {
+    "@koishijs/translator": "^1.0.0"
+  }
+}
